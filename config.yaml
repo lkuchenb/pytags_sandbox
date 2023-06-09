@@ -1,0 +1,13 @@
+- !!python/object/apply:transformations.split
+  kwds:
+    separator: ';'
+    strip: true
+
+- !!python/object/apply:transformations.split_to_dict
+  kwds:
+    separator: "="
+    strip: true
+    keys:
+      - key
+      - value
+    for_each: true
